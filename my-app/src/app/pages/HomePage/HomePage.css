@@ -1,0 +1,120 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.home-page__title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #FDFAFA;
+  margin: 15px 0 50px;
+  animation: fadeInScale 1.5s ease;
+}
+
+.home-page__image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.home-page__image-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  color: #CAC8C8;
+  gap: 16px;
+  animation: fadeInScale 1.5s ease .5s backwards;
+}
+
+.home-page__image-section:first-child {
+  animation: fadeInScale 1.5s ease 1s backwards;
+}
+
+.home-page__image-section:last-child {
+  animation: fadeInScale 1.5s ease 1s backwards;
+}
+
+.home-page__plant-image {
+  width: 45px;
+  height: 55px;
+}
+
+.home-page__location-image {
+  width: 40px;
+  height: 55px;
+}
+
+.home-page__heart-image {
+  width: 45px;
+  height: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .home-page__title {
+    font-size: 4rem;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page__title {
+    font-size: 7rem;
+    margin-bottom: 123px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-page__image-container {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page__image-container {
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page__plant-image {
+    width: 55px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page__location-image {
+    width: 45px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-page__heart-image {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: .01;
+    transform: scale(.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

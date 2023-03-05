@@ -1,0 +1,13 @@
+.main {
+  flex-grow: 1;
+  width: 100%;
+  background-color: #4163D7;
+}
+
+.main__content {
+  padding: 20px;
+  width: 100%;
+  max-width: 1020px;
+  box-sizing: border-box;
+  margin: auto;
+}
