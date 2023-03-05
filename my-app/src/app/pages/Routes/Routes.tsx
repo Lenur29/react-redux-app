@@ -1,6 +1,6 @@
 import {
   createRoutesFromElements,
-  createBrowserRouter,
+  createHashRouter,
   Route,
 } from 'react-router-dom';
 import { HomePage } from '../HomePage';
@@ -9,7 +9,7 @@ import { ProfilePage } from '../ProfilePage';
 import { ErrorPage } from '../ErrorPage';
 import { App } from '../App';
 
-export const router = createBrowserRouter(
+export const router = createHashRouter(
   createRoutesFromElements(
     <>
       <Route
